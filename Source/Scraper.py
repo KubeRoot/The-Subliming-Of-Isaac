@@ -300,7 +300,6 @@ def scrape_api(a_path):
 		for file in files:
 			if file.startswith("class_") and file.endswith(".html") and not file.endswith("-members.html"):
 				classes_to_process.append(file)
-			#elif file == "namespace_isaac.html":
 			elif file.startswith("namespace_") and file.endswith(".html"):
 				namespaces_to_process.append(file)
 			elif file == "group__enums.html":
